@@ -28,7 +28,7 @@ body,
 html {
   height: 100vh;
   width: 100vw;
-
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -130,7 +130,7 @@ header button img {
 #bloco-1 h1 {
   position: absolute;
   top: -0.6rem;
-  left: 35rem;
+  left: 40%;
   font-weight: 700;
   font-size: 2.69rem;
   color: var(--text-color);
@@ -155,7 +155,7 @@ header button img {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  text-align: center;
   gap: 2rem;
 
   margin-top: 1.6rem;
@@ -196,10 +196,12 @@ header button img {
   top: 0;
   right: 0;
   height: 22rem;
-  width: 72.5rem;
+  width: 84.5%;
 }
 
 .main-2 #banner {
+  max-height: 300px;
+  width: 84.5%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -210,7 +212,7 @@ header button img {
   top: 0;
   left: 0;
   height: 41.25rem;
-  width: 17.625rem;
+  width: 15.5%;
 
   border-right: 1px solid var(--subtitle-color);
   border-bottom: 1px solid var(--subtitle-color);
@@ -220,6 +222,7 @@ header button img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   width: 50%;
   margin-top: 7rem;
   font-weight: 400;
@@ -233,16 +236,14 @@ header button img {
   
   background-color: var(--body-background);
   position: relative;
-
-  
 }
 
-#main-3 h2{
+#main-3 h2 {
   padding-left: 5rem;
   padding-top: 9.375rem;
-    font-weight: 700;
-    font-size: 3.125rem;
-    color: var(--text-color);
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: var(--text-color);
 }
 
 #main-3 h2 span {
@@ -250,6 +251,7 @@ header button img {
 }
 
 #popular {
+  
   margin-top: 10rem;
   display: flex;
   justify-content: space-around;
@@ -257,8 +259,6 @@ header button img {
   padding-left: 5rem;
   padding-right: 5rem;
   gap: 5rem;
-
-  
 }
 
 #popular-1 {
@@ -267,7 +267,7 @@ header button img {
   bottom: 4.718rem;
   display: grid;
   gap: 1.5rem;
-  width: 38rem;
+  width: 45%;
   border-right: 1px solid var(--subtitle-color);
 }
 
@@ -276,23 +276,22 @@ header button img {
   align-items: center;
   gap: 6.2rem;
   color: var(--text-color);
-  font-size: 1.90rem;
+  font-size: 1.9rem;
 }
 
 #popular-1 p {
   display: flex;
   align-items: center;
-  
+
   font-weight: 400;
   color: var(--text-color);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-
 
 #popular-1 p span {
   color: var(--color-logo);
   position: absolute;
-  right: 16rem;
+  left: 18rem;
 }
 
 #popular-2 {
@@ -301,7 +300,7 @@ header button img {
   width: 38rem;
 
   position: absolute;
-  right:  -7rem;
+  right: -7rem;
   bottom: 4.718rem;
 }
 
@@ -310,7 +309,7 @@ header button img {
   align-items: center;
   font-weight: 400;
   color: var(--text-color);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 #popular-2 h3 {
@@ -318,7 +317,7 @@ header button img {
   align-items: center;
   gap: 6.2rem;
   color: var(--text-color);
-  font-size: 1.90rem;
+  font-size: 1.9rem;
 }
 
 #popular-2 p span {
@@ -328,3 +327,113 @@ header button img {
 }
 
 /* MAIN-3 =========--------======== */
+#main-4 {
+  height: 56.5rem;
+  width: 100vw;
+  margin: auto;
+  background-color: var(--body-background);
+}
+
+#main-4 h2 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: 700;
+  padding: 7.5rem;
+}
+
+#main-4 h2 span {
+  color: var(--color-logo);
+}
+
+#see-artists p a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+#best-artists {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#best-artists img {
+  width: 70px;
+  height: 70px;
+}
+
+#best-artists button {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--card-color);
+  height: 120px;
+  width: 300px;
+  border: none;
+  padding: 2rem;
+}
+
+#best-artists button:hover {
+  background-color: var(--color-logo);
+}
+
+
+#best-artists p {
+  display: block;
+  align-items: center;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+#best-artists p span {
+  color: var(--color-logo);
+}
+
+#best-artists2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 6rem;
+}
+
+#best-artists2 img {
+  width: 70px;
+  height: 70px;
+}
+
+#best-artists2 button {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--card-color);
+  height: 120px;
+  width: 300px;
+  border: none;
+  padding: 1.5rem;
+}
+
+#best-artists2 p {
+  display: block;
+  align-items: center;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+#best-artists2 p span {
+  color: var(--color-logo);
+}
+
+#best-artists2 button:hover {
+  background-color: var(--color-logo);
+}
