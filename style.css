@@ -449,15 +449,79 @@ header button img {
 }
 
 .logo-button {
+  margin-top: 5.125rem;
   width: 1280px;
   display: inline-flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: 40%;
 }
 
 .logo-button button {
-  padding: 0.5rem;
+  width: 80px;
+  height: 80px;
   background-color: var(--color-logo);
   border: none;
+}
+
+.background-middle {
+  margin: 0 auto;
+  background-color: var(--card-color);
+  height: 20rem;
+  border-bottom: 1px solid var(--subtitle-color);
+}
+
+/* .divider2 {
+  width: 1px;
+  height: 320px;
+  border: 1px solid var(--subtitle-color);
+} */
+
+.send {
+  display: table-cell;
+  vertical-align: middle;
+  width: 29rem;
+  height: 20rem;
+  border-right: 1px solid var(--subtitle-color);
+}
+
+.limit-input {
+  margin-top: 1.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 402px;
+  height: 70px;
+  background-color: var(--color-input);
+}
+
+input[type='email'] {
+  padding: 20px;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  background-color: var(--color-input);
+  width: 280px;
+  height: 70px;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--subtitle-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+input[type='button'] {
+  font-size: 20px;
+  font-weight: 700;
+  width: 122px;
+  height: 70px;
+}
+
+label {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+label span {
+  color: var(--color-logo);
 }
