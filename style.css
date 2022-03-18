@@ -29,18 +29,24 @@ html {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
 /* HEADER =========--------======== */
 header {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  /* padding-left: 5rem;
+  padding-right: 5rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
-  height: 10vh;
+  max-width: 1280px;
+  height: 12vh;
+  margin-bottom: 2rem;
+  margin: 0 auto;
 }
 
 nav {
@@ -50,7 +56,7 @@ nav {
 }
 
 nav a {
-  font-size: 1.12rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -66,7 +72,7 @@ header button {
 }
 
 header button a {
-  font: 700 0.8rem "Montserrat";
+  font: 700 0.8rem 'Montserrat';
 
   color: var(--black-text);
 }
@@ -83,7 +89,7 @@ header button img {
   left: 0;
   z-index: -1;
   width: 100vw;
-
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -91,12 +97,11 @@ header button img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  max-width: 1270px;
   height: 15.37rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-top: 5.62rem;
 
+  margin-top: 7rem;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -106,21 +111,21 @@ header button img {
   font-size: 1.12rem;
   position: absolute;
   top: 0;
-  left: 5rem;
+  left: 0;
 }
 
 #bloco-1 #group-avarts {
   display: block;
   position: absolute;
   bottom: 3.2rem;
-  left: 5rem;
+  left: 0;
 }
 
 #bloco-1 #p2 {
   display: block;
   position: absolute;
   bottom: 3.2rem;
-  left: 16rem;
+  left: 11rem;
 
   font-weight: 400;
   font-size: 1.1rem;
@@ -130,7 +135,7 @@ header button img {
 #bloco-1 h1 {
   position: absolute;
   top: -0.6rem;
-  left: 40%;
+  left: 35%;
   font-weight: 700;
   font-size: 2.69rem;
   color: var(--text-color);
@@ -144,24 +149,25 @@ header button img {
 
 #badge {
   position: absolute;
-  right: 5rem;
+  right: 0;
   top: 0;
   height: 195px;
 }
 
 /* GALLERY =========--------======== */
 
-#gallery {
+.gallery {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 2rem;
 
+  gap: 1rem;
+
+  margin: 0 auto;
   margin-top: 1.6rem;
 }
 
-#gallery img {
+.gallery img {
   border: 1px solid var(--text-color);
 }
 
@@ -233,7 +239,8 @@ header button img {
 /* MAIN-3 =========--------======== */
 #main-3 {
   height: 67.875rem;
-  
+
+  width: 100vw;
   background-color: var(--body-background);
   position: relative;
 }
@@ -250,31 +257,26 @@ header button img {
   color: var(--color-logo);
 }
 
-#popular {
-  
+.popular {
   margin-top: 10rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
+
   gap: 5rem;
 }
 
 #popular-1 {
-  position: absolute;
-  left: 5rem;
-  bottom: 4.718rem;
   display: grid;
   gap: 1.5rem;
-  width: 45%;
-  border-right: 1px solid var(--subtitle-color);
+
+  width: 22rem;
 }
 
 #popular-1 h3 {
   display: flex;
   align-items: center;
-  gap: 6.2rem;
+  justify-content: space-between;
   color: var(--text-color);
   font-size: 1.9rem;
 }
@@ -290,23 +292,23 @@ header button img {
 
 #popular-1 p span {
   color: var(--color-logo);
-  position: absolute;
-  left: 18rem;
+}
+
+.divider {
+  height: 640px;
+  border: 1px solid var(--subtitle-color);
 }
 
 #popular-2 {
   display: grid;
   gap: 1.5rem;
-  width: 38rem;
-
-  position: absolute;
-  right: -7rem;
-  bottom: 4.718rem;
 }
 
 #popular-2 p {
   display: flex;
   align-items: center;
+
+  gap: 11rem;
   font-weight: 400;
   color: var(--text-color);
   font-size: 0.9rem;
@@ -322,15 +324,13 @@ header button img {
 
 #popular-2 p span {
   color: var(--color-logo);
-  position: absolute;
-  right: 16rem;
 }
 
 /* MAIN-3 =========--------======== */
 #main-4 {
   height: 56.5rem;
   width: 100vw;
-  margin: auto;
+
   background-color: var(--body-background);
 }
 
@@ -360,7 +360,7 @@ header button img {
 #best-artists {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #best-artists img {
@@ -383,7 +383,6 @@ header button img {
   background-color: var(--color-logo);
 }
 
-
 #best-artists p {
   display: block;
   align-items: center;
@@ -400,7 +399,7 @@ header button img {
 #best-artists2 {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   margin-top: 6rem;
 }
@@ -436,4 +435,29 @@ header button img {
 
 #best-artists2 button:hover {
   background-color: var(--color-logo);
+}
+
+/* FOOTER =========--------======== */
+
+.background-logo {
+  height: 13.875rem;
+  background: var(--card-color);
+  position: relative;
+  margin: 0 auto;
+
+  border-bottom: 1px solid var(--subtitle-color);
+}
+
+.logo-button {
+  width: 1280px;
+  display: inline-flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 40%;
+}
+
+.logo-button button {
+  padding: 0.5rem;
+  background-color: var(--color-logo);
+  border: none;
 }
