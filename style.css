@@ -474,15 +474,24 @@ header button img {
 
 .send {
   position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  /* width: 29rem; */
+  
+  width: 80rem;
   height: 20rem;
-  /* border-right: 1px solid var(--subtitle-color); */
+
  
 }
 
+.divider2{
+  position: absolute;
+  left: 30rem;
+  width: 0;
+  height: 20rem;
+  border: 1px solid var(--subtitle-color);
+}
+
 .limit-input {
+position: absolute;
+top: 8rem;
   margin-top: 1.5625rem;
   display: flex;
   align-items: center;
@@ -490,6 +499,8 @@ header button img {
   width: 402px;
   height: 70px;
   background-color: var(--color-input);
+
+  
 }
 
 input[type="email"] {
@@ -516,6 +527,8 @@ input[type="button"] {
 }
 
 label {
+  position: absolute;
+  top: 3rem;
   color: var(--text-color);
   font-size: 30px;
   font-weight: 500;
@@ -525,14 +538,18 @@ label span {
   color: var(--color-logo);
 }
 
+
+
 .footer-menu {
  margin: 0 auto;
- 
+ padding-top: 3rem;
   background-color: var(--card-color);
-  
+  margin-right: 7rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
+
+  gap: 10rem;
 }
 .footer-menu ul li {
   margin-bottom: 20px;
@@ -548,5 +565,28 @@ label span {
 .footer-menu ul a:hover {
   color: var(--text-color);
   font-weight: 700;
-  font-size: 23px;
+  
+}
+
+.background-bottom {
+  width: 100vw;
+  background-color: var(--card-color);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  background-color: var(--card-color);
+}
+
+.footer-bottom p a{
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--subtitle-color);
+}
+
+.footer-bottom img {
+  margin-left: 3rem;
 }
