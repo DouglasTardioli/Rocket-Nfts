@@ -29,17 +29,17 @@ html {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
+ 
   margin: 0 auto;
   max-width: 1280px;
 }
+
 /* HEADER =========--------======== */
 header {
-  /* padding-left: 5rem;
-  padding-right: 5rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +72,7 @@ header button {
 }
 
 header button a {
-  font: 700 0.8rem 'Montserrat';
+  font: 700 0.8rem "Montserrat";
 
   color: var(--black-text);
 }
@@ -437,7 +437,7 @@ header button img {
   background-color: var(--color-logo);
 }
 
-/* FOOTER =========--------======== */
+/* FOOTER-TOP =========--------======== */
 
 .background-logo {
   height: 13.875rem;
@@ -462,25 +462,24 @@ header button img {
   border: none;
 }
 
+/* FOOTER-MIDDLE =========--------======== */
 .background-middle {
+  
   margin: 0 auto;
   background-color: var(--card-color);
   height: 20rem;
   border-bottom: 1px solid var(--subtitle-color);
 }
 
-/* .divider2 {
-  width: 1px;
-  height: 320px;
-  border: 1px solid var(--subtitle-color);
-} */
 
 .send {
+  position: relative;
   display: table-cell;
   vertical-align: middle;
-  width: 29rem;
+  /* width: 29rem; */
   height: 20rem;
-  border-right: 1px solid var(--subtitle-color);
+  /* border-right: 1px solid var(--subtitle-color); */
+ 
 }
 
 .limit-input {
@@ -493,7 +492,7 @@ header button img {
   background-color: var(--color-input);
 }
 
-input[type='email'] {
+input[type="email"] {
   padding: 20px;
   border: none;
   outline: none;
@@ -509,7 +508,7 @@ input::-webkit-input-placeholder {
   font-weight: 400;
 }
 
-input[type='button'] {
+input[type="button"] {
   font-size: 20px;
   font-weight: 700;
   width: 122px;
@@ -524,4 +523,30 @@ label {
 
 label span {
   color: var(--color-logo);
+}
+
+.footer-menu {
+ margin: 0 auto;
+ 
+  background-color: var(--card-color);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-menu ul li {
+  margin-bottom: 20px;
+}
+
+.footer-menu ul a{
+  
+  font-size: 20px;
+  color: var(--subtitle-color);
+  font-weight: 400;
+}
+
+.footer-menu ul a:hover {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 23px;
 }
