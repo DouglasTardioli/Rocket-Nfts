@@ -33,7 +33,6 @@ html {
 }
 
 .container {
- 
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -44,7 +43,7 @@ header {
   align-items: center;
   justify-content: space-between;
   max-width: 1280px;
-  height: 12vh;
+  height: 14vh;
   margin-bottom: 2rem;
   margin: 0 auto;
 }
@@ -277,24 +276,22 @@ header button img {
   width: 451px;
   display: flex;
   align-items: center;
-justify-content: space-between;
+  justify-content: space-between;
   color: var(--text-color);
   font-size: 1.9rem;
 }
-
 
 #popular-1 p {
   width: 352px;
   display: flex;
   align-items: center;
-justify-content: space-between;
+  justify-content: space-between;
   font-weight: 400;
   color: var(--subtitle-color);
   font-size: 0.9rem;
 }
 
 #popular-1 p span {
-  
   color: var(--color-logo);
 }
 
@@ -384,7 +381,7 @@ justify-content: space-between;
 }
 
 #best-artists button:hover {
-  background-color: var(--color-logo);
+  background-color: var(--body-background);
 }
 
 #best-artists p {
@@ -424,6 +421,10 @@ justify-content: space-between;
   padding: 1.5rem;
 }
 
+#best-artists2 button:hover {
+  background-color: var(--body-background);
+}
+
 #best-artists2 p {
   display: block;
   align-items: center;
@@ -435,10 +436,6 @@ justify-content: space-between;
 
 #best-artists2 p span {
   color: var(--color-logo);
-}
-
-#best-artists2 button:hover {
-  background-color: var(--color-logo);
 }
 
 /* FOOTER-TOP =========--------======== */
@@ -468,24 +465,20 @@ justify-content: space-between;
 
 /* FOOTER-MIDDLE =========--------======== */
 .background-middle {
-  
   margin: 0 auto;
   background-color: var(--card-color);
   height: 20rem;
   border-bottom: 1px solid var(--subtitle-color);
 }
 
-
 .send {
   position: relative;
-  
+
   width: 80rem;
   height: 20rem;
-
- 
 }
 
-.divider2{
+.divider2 {
   position: absolute;
   left: 30rem;
   width: 0;
@@ -494,8 +487,8 @@ justify-content: space-between;
 }
 
 .limit-input {
-position: absolute;
-top: 8rem;
+  position: absolute;
+  top: 8rem;
   margin-top: 1.5625rem;
   display: flex;
   align-items: center;
@@ -503,8 +496,6 @@ top: 8rem;
   width: 402px;
   height: 70px;
   background-color: var(--color-input);
-
-  
 }
 
 input[type="email"] {
@@ -542,11 +533,9 @@ label span {
   color: var(--color-logo);
 }
 
-
-
 .footer-menu {
- margin: 0 auto;
- padding-top: 3rem;
+  margin: 0 auto;
+  padding-top: 3rem;
   background-color: var(--card-color);
   margin-right: 7rem;
   display: flex;
@@ -559,8 +548,7 @@ label span {
   margin-bottom: 20px;
 }
 
-.footer-menu ul a{
-  
+.footer-menu ul a {
   font-size: 20px;
   color: var(--subtitle-color);
   font-weight: 400;
@@ -569,7 +557,6 @@ label span {
 .footer-menu ul a:hover {
   color: var(--text-color);
   font-weight: 700;
-  
 }
 
 .background-bottom {
@@ -585,7 +572,7 @@ label span {
   background-color: var(--card-color);
 }
 
-.footer-bottom p a{
+.footer-bottom p a {
   font-weight: 400;
   font-size: 1.2rem;
   color: var(--subtitle-color);
